@@ -1,0 +1,13 @@
+function [isWall,S,T] = get_maze_5x5(wallProb, seed, showPlots)
+%UNTITLED2 Summaof this function goes here
+%   Detailed explanation goes here
+n = 5;
+S = [1,1]; %start
+T = [n,n]; %konec
+
+isWall = rand(n,n) < wallProb;
+
+isWall(1,1) = 0;
+
+end
+
